@@ -37,9 +37,6 @@ d3.csv("/assets/data/data.csv", function(error, data) {
 
   });
 
-// array1.forEach(element => console.log(element));
-// console.log(dataElement)
-
 d3.csv("/assets/data/data.csv", function(error, data) {
     if (error) throw error;
         // console.log(data[0]);
@@ -56,28 +53,9 @@ d3.csv("/assets/data/data.csv", function(error, data) {
             .style("font", "10px times")
             );
 
-        
-
-
-        
-        
-
-
-        
+       
   });
 
-
-//      svg
-//      .append('g')
-//      .selectAll("dot")
-//      .data(data)
-//      .enter()
-//      .append("circle")
-//        .attr("class", "bubbles")
-//        .attr("cx", function(d) {return d.obesity;})
-//        .attr("cy", function(d) {return d;})
-//        .attr("r", function(d) {return d;})
-//        .style("fill", "red");
 
 var axisScaleX = d3.scaleLinear()
     .domain([0, 30])
